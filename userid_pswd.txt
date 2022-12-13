@@ -1,0 +1,3 @@
+database
+        uid:bloguser
+        pswd:harshandrushi
