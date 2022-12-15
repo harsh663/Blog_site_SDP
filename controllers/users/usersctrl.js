@@ -14,9 +14,9 @@ const userRegisterCtrl = async (req, res) => {
       email: req?.body?.email,
       password: req?.body?.password,
     });
-    res.json(user);               //send registr user
+    res.json(user);
   } catch (error) {
-    res.json(error);              //send error  
+    res.json(error);
   }
 };
 

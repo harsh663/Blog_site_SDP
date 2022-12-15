@@ -1,6 +1,5 @@
 const express = require("express");
 const dotenv = require("dotenv");
-const mongoose = require('mongoose'); //import mongoose package
 dotenv.config();
 const dbConnect = require("./config/db/dbConnect");
 const { userRegisterCtrl } = require("./controllers/users/usersCtrl");
@@ -21,7 +20,7 @@ app.post("/api/users/login", (req, res) => {
 });
 
 //fetch all user
-app.get("/api/users", (req, res) => { 
+app.get("/api/users", (req, res) => {
   //business logic
   res.json({ user: "fetch all user" });
 });
